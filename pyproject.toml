@@ -2,37 +2,37 @@
 constraint-dependencies = ['onnxruntime<1.20.0; python_version == "3.9"']
 
 [tool.uv.sources]
-livekit-agents = { workspace = true }
-livekit-plugins-anthropic = { workspace = true }
-livekit-plugins-assemblyai = { workspace = true }
-livekit-plugins-aws = { workspace = true }
-livekit-plugins-azure = { workspace = true }
-livekit-plugins-cartesia = { workspace = true }
-livekit-plugins-clova = { workspace = true }
-livekit-plugins-deepgram = { workspace = true }
-livekit-plugins-elevenlabs = { workspace = true }
-livekit-plugins-fal = { workspace = true }
-livekit-plugins-google = { workspace = true }
-livekit-plugins-nltk = { workspace = true }
-livekit-plugins-openai = { workspace = true }
-livekit-plugins-rime = { workspace = true }
-livekit-plugins-silero = { workspace = true }
-livekit-plugins-speechmatics = { workspace = true }
-livekit-plugins-turn-detector = { workspace = true }
-livekit-plugins-neuphonic = { workspace = true }
-livekit-plugins-playai = { workspace = true }
-livekit-plugins-groq = { workspace = true }
-livekit-plugins-gladia = { workspace = true }
-livekit-plugins-resemble = { workspace = true }
-livekit-plugins-bey = { workspace = true }
-livekit-plugins-bithuman = { workspace = true }
-livekit-plugins-speechify = { workspace = true }
-livekit-plugins-tavus = { workspace = true }
-livekit-plugins-hume = { workspace = true }
+wizzpert-agents = { workspace = true }
+wizzpert-plugins-anthropic = { workspace = true }
+wizzpert-plugins-assemblyai = { workspace = true }
+wizzpert-plugins-aws = { workspace = true }
+wizzpert-plugins-azure = { workspace = true }
+wizzpert-plugins-cartesia = { workspace = true }
+wizzpert-plugins-clova = { workspace = true }
+wizzpert-plugins-deepgram = { workspace = true }
+wizzpert-plugins-elevenlabs = { workspace = true }
+wizzpert-plugins-fal = { workspace = true }
+wizzpert-plugins-google = { workspace = true }
+wizzpert-plugins-nltk = { workspace = true }
+wizzpert-plugins-openai = { workspace = true }
+wizzpert-plugins-rime = { workspace = true }
+wizzpert-plugins-silero = { workspace = true }
+wizzpert-plugins-speechmatics = { workspace = true }
+wizzpert-plugins-turn-detector = { workspace = true }
+wizzpert-plugins-neuphonic = { workspace = true }
+wizzpert-plugins-playai = { workspace = true }
+wizzpert-plugins-groq = { workspace = true }
+wizzpert-plugins-gladia = { workspace = true }
+wizzpert-plugins-resemble = { workspace = true }
+wizzpert-plugins-bey = { workspace = true }
+wizzpert-plugins-bithuman = { workspace = true }
+wizzpert-plugins-speechify = { workspace = true }
+wizzpert-plugins-tavus = { workspace = true }
+wizzpert-plugins-hume = { workspace = true }
 
 [tool.uv.workspace]
-members = ["livekit-plugins/*", "livekit-agents"]
-exclude = ["livekit-plugins/livekit-plugins-browser"]
+members = ["wizzpert-plugins/*", "wizzpert-agents"]
+exclude = ["wizzpert-plugins/wizzpert-plugins-browser"]
 
 [dependency-groups]
 dev = [
@@ -62,7 +62,7 @@ select = [
 
 [tool.ruff.lint.isort]
 combine-as-imports = true
-known-first-party = ["livekit"]
+known-first-party = ["wizzpert"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
