@@ -8,6 +8,10 @@
 
 <!--END_BANNER_IMAGE-->
 
+<br />
+
+<img src="wizzpert-plugins/assets/icon.png" alt="Wizzpert Icon" width="100" />
+
 <br /><br />
 
 
