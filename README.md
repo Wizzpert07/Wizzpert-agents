@@ -11,6 +11,16 @@
 <!--END_BANNER_IMAGE-->
 
 <br /><br />
+
+
+# Wizzpert Agents for Python
+
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
+Realtime framework for production-grade multimodal and voice AI agents.
+
+See [https://docs.wizzpert.io/agents/](https://docs.wizzpert.io/agents/) for quickstarts, documentation, and examples.
+
 Looking for the JS/TS library? Check out [AgentsJS](https://github.com/wizzpert/agents-js)
 
 ## ✨ 1.0 release ✨
