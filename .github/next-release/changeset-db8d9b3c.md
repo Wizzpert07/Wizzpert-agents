@@ -1,5 +1,5 @@
 ---
-"livekit-plugins-google": patch
+"wizzpert-plugins-google": patch
 ---
 
 improvements to Gemini Live handling (#2089)

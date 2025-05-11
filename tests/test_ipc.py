@@ -13,8 +13,8 @@ from typing import ClassVar
 
 import psutil
 
-from livekit.agents import JobContext, JobProcess, ipc, job, utils
-from livekit.protocol import agent
+from wizzpert.agents import JobContext, JobProcess, ipc, job, utils
+from wizzpert.protocol import agent
 
 
 @dataclass

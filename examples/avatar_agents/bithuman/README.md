@@ -1,6 +1,6 @@
 # BitHuman Avatar Example
 
-This example demonstrates how to integrate the BitHuman SDK with LiveKit Agents to create an interactive visual agent on local CPU device.
+This example demonstrates how to integrate the BitHuman SDK with wizzpert Agents to create an interactive visual agent on local CPU device.
 
 ## Prerequisites
 
@@ -42,6 +42,6 @@ python examples/avatar_agents/bithuman/agent_worker.py dev
 This example integrates BitHuman directly within the agent worker process:
 - Audio from the agent is routed to the BitHuman runtime
 - The BitHuman SDK processes the audio to generate realistic animations
-- Synchronized audio and video are published to the LiveKit room
+- Synchronized audio and video are published to the wizzpert room
 
 For more information about BitHuman SDK, refer to the [official documentation](https://docs.bithuman.io/api-reference/sdk/quick-start).

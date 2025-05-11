@@ -4,8 +4,8 @@ from typing import Optional
 
 from dotenv import load_dotenv
 
-from livekit import api
-from livekit.agents import (
+from wizzpert import api
+from wizzpert.agents import (
     Agent,
     AgentSession,
     ChatContext,
@@ -18,13 +18,13 @@ from livekit.agents import (
     cli,
     metrics,
 )
-from livekit.agents.job import get_job_context
-from livekit.agents.llm import function_tool
-from livekit.agents.voice import MetricsCollectedEvent
-from livekit.plugins import deepgram, openai, silero
+from wizzpert.agents.job import get_job_context
+from wizzpert.agents.llm import function_tool
+from wizzpert.agents.voice import MetricsCollectedEvent
+from wizzpert.plugins import deepgram, openai, silero
 
 # uncomment to enable Krisp BVC noise cancellation, currently supported on Linux and MacOS
-# from livekit.plugins import noise_cancellation
+# from wizzpert.plugins import noise_cancellation
 
 ## The storyteller agent is a multi-agent that can handoff the session to another agent.
 ## This example demonstrates more complex workflows with multiple agents.

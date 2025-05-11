@@ -1,5 +1,5 @@
 ---
-"livekit-plugins-google": patch
+"wizzpert-plugins-google": patch
 ---
 
 supress stream timeout in google stt (#2189)

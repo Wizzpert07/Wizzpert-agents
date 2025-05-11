@@ -9,7 +9,7 @@ from llama_index.core import (
 )
 from llama_index.core.schema import MetadataMode
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     AutoSubscribe,
@@ -18,8 +18,8 @@ from livekit.agents import (
     cli,
     llm,
 )
-from livekit.agents.voice.agent import ModelSettings
-from livekit.plugins import deepgram, openai, silero
+from wizzpert.agents.voice.agent import ModelSettings
+from wizzpert.plugins import deepgram, openai, silero
 
 load_dotenv()
 
@@ -42,7 +42,7 @@ class RetrievalAgent(Agent):
     def __init__(self, index: VectorStoreIndex):
         super().__init__(
             instructions=(
-                "You are a voice assistant created by LiveKit. Your interface "
+                "You are a voice assistant created by wizzpert. Your interface "
                 "with users will be voice. You should use short and concise "
                 "responses, and avoiding usage of unpronouncable punctuation."
             ),

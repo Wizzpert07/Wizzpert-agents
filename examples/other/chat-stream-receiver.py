@@ -8,9 +8,9 @@ from typing import Optional
 
 from dotenv import load_dotenv
 
-from livekit import api, rtc
-from livekit.agents import utils
-from livekit.agents.types import (
+from wizzpert import api, rtc
+from wizzpert.agents import utils
+from wizzpert.agents.types import (
     ATTRIBUTE_TRANSCRIPTION_FINAL,
     ATTRIBUTE_TRANSCRIPTION_SEGMENT_ID,
     ATTRIBUTE_TRANSCRIPTION_TRACK_ID,
@@ -23,7 +23,7 @@ logger.setLevel(logging.INFO)
 load_dotenv()
 
 ## This example demonstrates a text-only agent.
-## Send text input using TextStream to topic `lk.chat` (https://docs.livekit.io/home/client/data/text-streams)
+## Send text input using TextStream to topic `lk.chat` (https://docs.wizzpert.io/home/client/data/text-streams)
 ## The agent output is sent through TextStream to the `lk.transcription` topic
 
 
@@ -139,9 +139,9 @@ class TextStreamPrinter:
 
 
 async def main(room_name: str):
-    url = os.getenv("LIVEKIT_URL")
+    url = os.getenv("wizzpert_URL")
     if not url:
-        print("Please set LIVEKIT_URL environment variable")
+        print("Please set wizzpert_URL environment variable")
         return
 
     room = rtc.Room()

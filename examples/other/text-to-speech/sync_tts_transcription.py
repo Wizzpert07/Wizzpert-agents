@@ -4,8 +4,8 @@ from typing import Optional
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import (
+from wizzpert import rtc
+from wizzpert.agents import (
     AutoSubscribe,
     JobContext,
     WorkerOptions,
@@ -13,7 +13,7 @@ from livekit.agents import (
     transcription,
     tts,
 )
-from livekit.plugins import elevenlabs
+from wizzpert.plugins import elevenlabs
 
 load_dotenv()
 

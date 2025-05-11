@@ -3,7 +3,7 @@ import os
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     JobContext,
@@ -12,7 +12,7 @@ from livekit.agents import (
     WorkerType,
     cli,
 )
-from livekit.plugins import bithuman, openai
+from wizzpert.plugins import bithuman, openai
 
 logger = logging.getLogger("bithuman-avatar-example")
 logger.setLevel(logging.INFO)

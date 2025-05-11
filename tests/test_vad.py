@@ -1,7 +1,7 @@
 import pytest
 
-from livekit.agents import vad
-from livekit.plugins import silero
+from wizzpert.agents import vad
+from wizzpert.plugins import silero
 
 from . import utils
 

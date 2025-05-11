@@ -3,8 +3,8 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import (
+from wizzpert import rtc
+from wizzpert.agents import (
     Agent,
     AgentSession,
     AutoSubscribe,
@@ -19,7 +19,7 @@ from livekit.agents import (
     llm,
     utils,
 )
-from livekit.plugins import deepgram, silero
+from wizzpert.plugins import deepgram, silero
 
 load_dotenv()
 

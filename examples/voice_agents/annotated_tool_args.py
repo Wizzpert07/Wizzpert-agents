@@ -5,9 +5,9 @@ from typing import Annotated, Literal  # noqa: F401
 from dotenv import load_dotenv
 from pydantic import Field  # noqa: F401
 
-from livekit.agents import Agent, AgentSession, JobContext, WorkerOptions, cli
-from livekit.agents.llm import function_tool
-from livekit.plugins import cartesia, deepgram, openai, silero
+from wizzpert.agents import Agent, AgentSession, JobContext, WorkerOptions, cli
+from wizzpert.agents.llm import function_tool
+from wizzpert.plugins import cartesia, deepgram, openai, silero
 
 logger = logging.getLogger("annotated-tool-args")
 logger.setLevel(logging.INFO)

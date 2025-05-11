@@ -2,9 +2,9 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit.agents import Agent, AgentSession, JobContext, WorkerOptions, cli, mcp
-from livekit.plugins import deepgram, openai, silero
-from livekit.plugins.turn_detector.multilingual import MultilingualModel
+from wizzpert.agents import Agent, AgentSession, JobContext, WorkerOptions, cli, mcp
+from wizzpert.plugins import deepgram, openai, silero
+from wizzpert.plugins.turn_detector.multilingual import MultilingualModel
 
 logger = logging.getLogger("mcp-agent")
 

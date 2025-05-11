@@ -1,16 +1,16 @@
 import pytest
 
-from livekit.agents import tokenize
-from livekit.agents.tokenize import basic
-from livekit.agents.tokenize._basic_paragraph import split_paragraphs
-from livekit.plugins import nltk
+from wizzpert.agents import tokenize
+from wizzpert.agents.tokenize import basic
+from wizzpert.agents.tokenize._basic_paragraph import split_paragraphs
+from wizzpert.plugins import nltk
 
 # Download the punkt tokenizer, will only download if not already present
 nltk.NltkPlugin().download_files()
 
 TEXT = (
     "Hi! "
-    "LiveKit is a platform for live audio and video applications and services. \n\n"
+    "wizzpert is a platform for live audio and video applications and services. \n\n"
     "R.T.C stands for Real-Time Communication... again R.T.C. "
     "Mr. Theo is testing the sentence tokenizer. "
     "\nThis is a test. Another test. "
@@ -22,7 +22,7 @@ TEXT = (
 )
 
 EXPECTED_MIN_20 = [
-    "Hi! LiveKit is a platform for live audio and video applications and services.",
+    "Hi! wizzpert is a platform for live audio and video applications and services.",
     "R.T.C stands for Real-Time Communication... again R.T.C.",
     "Mr. Theo is testing the sentence tokenizer.",
     "This is a test. Another test.",
@@ -32,7 +32,7 @@ EXPECTED_MIN_20 = [
 ]
 
 EXPECTED_MIN_20_RETAIN_FORMAT = [
-    "Hi! LiveKit is a platform for live audio and video applications and services.",
+    "Hi! wizzpert is a platform for live audio and video applications and services.",
     " \n\nR.T.C stands for Real-Time Communication... again R.T.C.",
     " Mr. Theo is testing the sentence tokenizer.",
     " \nThis is a test. Another test.",

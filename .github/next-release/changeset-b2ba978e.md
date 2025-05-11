@@ -1,6 +1,6 @@
 ---
-"livekit-agents": patch
-"livekit-plugins-openai": patch
+"wizzpert-agents": patch
+"wizzpert-plugins-openai": patch
 ---
 
 feat: enhance openai LLM metrics to include cached prompt tokens (#1998)

@@ -1,5 +1,5 @@
 ---
-"livekit-agents": patch
+"wizzpert-agents": patch
 ---
 
 add bey avatar plugin (#2031)

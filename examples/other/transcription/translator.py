@@ -3,7 +3,7 @@ import urllib.parse
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     AutoSubscribe,
@@ -17,7 +17,7 @@ from livekit.agents import (
     metrics,
     utils,
 )
-from livekit.plugins import openai, silero
+from wizzpert.plugins import openai, silero
 
 load_dotenv()
 
@@ -86,7 +86,7 @@ async def entrypoint(ctx: JobContext):
             transcription_enabled=True,
             # audio track is created to emit legacy transcription events for agent
             # you can disable audio output if you are using the text stream
-            # https://docs.livekit.io/agents/build/text/
+            # https://docs.wizzpert.io/agents/build/text/
             audio_enabled=True,
             sync_transcription=False,
         ),

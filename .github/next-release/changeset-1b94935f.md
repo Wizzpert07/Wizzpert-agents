@@ -1,5 +1,5 @@
 ---
-"livekit-agents": patch
+"wizzpert-agents": patch
 ---
 
 remove await from room_io.start (#2167)

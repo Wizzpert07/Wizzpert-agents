@@ -2,7 +2,7 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     AutoSubscribe,
@@ -15,7 +15,7 @@ from livekit.agents import (
     llm,
     metrics,
 )
-from livekit.plugins import openai, silero
+from wizzpert.plugins import openai, silero
 
 load_dotenv()
 

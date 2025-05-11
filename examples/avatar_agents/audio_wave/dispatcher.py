@@ -19,7 +19,7 @@ THIS_DIR = Path(__file__).parent.absolute()
 @dataclass
 class AvatarConnectionInfo:
     room_name: str
-    url: str  # LiveKit server URL
+    url: str  # wizzpert server URL
     token: str  # Token for avatar worker to join
 
 

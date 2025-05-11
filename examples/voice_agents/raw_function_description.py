@@ -2,7 +2,7 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     JobContext,
@@ -11,7 +11,7 @@ from livekit.agents import (
     cli,
     function_tool,
 )
-from livekit.plugins import openai, silero  # noqa: F401
+from wizzpert.plugins import openai, silero  # noqa: F401
 
 # This demo defines an agent using a raw function tool to open predefined gates via enum input.
 # When using raw function tools, compatibility across LLM providers is not guaranteed,

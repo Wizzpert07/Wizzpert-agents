@@ -10,10 +10,10 @@ import aiohttp
 import pytest
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import APIConnectOptions, APITimeoutError
-from livekit.agents.utils import AudioBuffer
-from livekit.plugins import (
+from wizzpert import rtc
+from wizzpert.agents import APIConnectOptions, APITimeoutError
+from wizzpert.agents.utils import AudioBuffer
+from wizzpert.plugins import (
     aws,
     azure,
     cartesia,

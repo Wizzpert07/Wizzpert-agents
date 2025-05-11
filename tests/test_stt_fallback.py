@@ -4,9 +4,9 @@ import asyncio
 
 import pytest
 
-from livekit.agents import APIConnectionError, utils
-from livekit.agents.stt import STT, AvailabilityChangedEvent, FallbackAdapter
-from livekit.agents.utils.aio.channel import ChanEmpty
+from wizzpert.agents import APIConnectionError, utils
+from wizzpert.agents.stt import STT, AvailabilityChangedEvent, FallbackAdapter
+from wizzpert.agents.utils.aio.channel import ChanEmpty
 
 from .fake_stt import FakeSTT
 

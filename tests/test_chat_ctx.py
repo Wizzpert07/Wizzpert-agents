@@ -1,4 +1,4 @@
-from livekit.agents.llm import utils
+from wizzpert.agents.llm import utils
 
 # function_arguments_to_pydantic_model
 
@@ -24,8 +24,8 @@ def test_args_model():
 
 
 def test_dict():
-    from livekit import rtc
-    from livekit.agents.llm import ChatContext, ImageContent
+    from wizzpert import rtc
+    from wizzpert.agents.llm import ChatContext, ImageContent
 
     chat_ctx = ChatContext()
     chat_ctx.add_message(

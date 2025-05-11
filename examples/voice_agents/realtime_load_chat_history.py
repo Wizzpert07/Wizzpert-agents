@@ -2,8 +2,8 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit.agents import Agent, AgentSession, JobContext, WorkerOptions, cli, llm
-from livekit.plugins import openai
+from wizzpert.agents import Agent, AgentSession, JobContext, WorkerOptions, cli, llm
+from wizzpert.plugins import openai
 
 ## This example shows how to load chat history for OpenAI Realtime Model
 

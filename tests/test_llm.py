@@ -8,10 +8,10 @@ from typing import Annotated, Callable
 
 import pytest
 
-from livekit.agents import APIConnectionError, llm
-from livekit.agents.llm import ChatContext, FunctionContext, TypeInfo, ai_callable
-from livekit.plugins import anthropic, aws, google, openai
-from livekit.rtc import VideoBufferType, VideoFrame
+from wizzpert.agents import APIConnectionError, llm
+from wizzpert.agents.llm import ChatContext, FunctionContext, TypeInfo, ai_callable
+from wizzpert.plugins import anthropic, aws, google, openai
+from wizzpert.rtc import VideoBufferType, VideoFrame
 
 
 class Unit(Enum):
@@ -192,13 +192,13 @@ async def test_runtime_addition(llm_factory: Callable[[], llm.LLM]):
         called_msg = message
 
     stream = await _request_fnc_call(
-        input_llm, "Can you show 'Hello LiveKit!' on the screen?", fnc_ctx
+        input_llm, "Can you show 'Hello wizzpert!' on the screen?", fnc_ctx
     )
     fns = stream.execute_functions()
     await asyncio.gather(*[f.task for f in fns])
     await stream.aclose()
 
-    assert called_msg == "Hello LiveKit!", "send_message should be called"
+    assert called_msg == "Hello wizzpert!", "send_message should be called"
 
 
 @pytest.mark.parametrize("llm_factory", LLMS)

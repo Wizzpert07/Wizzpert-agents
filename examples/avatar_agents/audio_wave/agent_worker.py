@@ -7,13 +7,13 @@ from functools import partial
 import httpx
 from dotenv import load_dotenv
 
-from livekit import api, rtc
-from livekit.agents import JobContext, WorkerOptions, WorkerType, cli
-from livekit.agents.voice import Agent, AgentSession
-from livekit.agents.voice.avatar import DataStreamAudioOutput
-from livekit.agents.voice.io import PlaybackFinishedEvent
-from livekit.agents.voice.room_io import ATTRIBUTE_PUBLISH_ON_BEHALF, RoomOutputOptions
-from livekit.plugins import openai
+from wizzpert import api, rtc
+from wizzpert.agents import JobContext, WorkerOptions, WorkerType, cli
+from wizzpert.agents.voice import Agent, AgentSession
+from wizzpert.agents.voice.avatar import DataStreamAudioOutput
+from wizzpert.agents.voice.io import PlaybackFinishedEvent
+from wizzpert.agents.voice.room_io import ATTRIBUTE_PUBLISH_ON_BEHALF, RoomOutputOptions
+from wizzpert.plugins import openai
 
 logger = logging.getLogger("avatar-example")
 logger.setLevel(logging.INFO)
@@ -28,7 +28,7 @@ AVATAR_IDENTITY = "avatar_worker"
 class AvatarConnectionInfo:
     room_name: str
     url: str
-    """LiveKit server URL"""
+    """wizzpert server URL"""
     token: str
     """Token for avatar worker to join"""
 

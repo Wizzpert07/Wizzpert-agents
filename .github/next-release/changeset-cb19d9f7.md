@@ -1,5 +1,5 @@
 ---
-"livekit-agents": patch
+"wizzpert-agents": patch
 ---
 
 fix using raw tools with ChatContext copies (#2096)

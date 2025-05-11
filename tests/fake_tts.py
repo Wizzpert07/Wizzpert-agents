@@ -2,16 +2,16 @@ from __future__ import annotations
 
 import asyncio
 
-from livekit import rtc
-from livekit.agents import NOT_GIVEN, NotGivenOr, utils
-from livekit.agents.tts import (
+from wizzpert import rtc
+from wizzpert.agents import NOT_GIVEN, NotGivenOr, utils
+from wizzpert.agents.tts import (
     TTS,
     ChunkedStream,
     SynthesizedAudio,
     SynthesizeStream,
     TTSCapabilities,
 )
-from livekit.agents.types import DEFAULT_API_CONNECT_OPTIONS, APIConnectOptions
+from wizzpert.agents.types import DEFAULT_API_CONNECT_OPTIONS, APIConnectOptions
 
 
 class FakeTTS(TTS):

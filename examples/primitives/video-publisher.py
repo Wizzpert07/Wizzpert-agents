@@ -4,8 +4,8 @@ import random
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import JobContext, WorkerOptions, cli
+from wizzpert import rtc
+from wizzpert.agents import JobContext, WorkerOptions, cli
 
 # Load environment variables
 load_dotenv()

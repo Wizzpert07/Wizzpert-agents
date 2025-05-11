@@ -2,7 +2,7 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     JobContext,
@@ -11,7 +11,7 @@ from livekit.agents import (
     WorkerOptions,
     cli,
 )
-from livekit.plugins import openai
+from wizzpert.plugins import openai
 
 logger = logging.getLogger("text-only")
 logger.setLevel(logging.INFO)
@@ -19,7 +19,7 @@ logger.setLevel(logging.INFO)
 load_dotenv()
 
 ## This example demonstrates a text-only agent.
-## Send text input using TextStream to topic `lk.chat` (https://docs.livekit.io/home/client/data/text-streams)
+## Send text input using TextStream to topic `lk.chat` (https://docs.wizzpert.io/home/client/data/text-streams)
 ## The agent output is sent through TextStream to the `lk.transcription` topic
 
 

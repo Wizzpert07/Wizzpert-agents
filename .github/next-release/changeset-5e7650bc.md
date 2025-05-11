@@ -1,5 +1,5 @@
 ---
-"livekit-agents": patch
+"wizzpert-agents": patch
 ---
 
 avoid duplicate room io initialization (#2037)

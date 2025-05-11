@@ -4,7 +4,7 @@ from collections.abc import AsyncIterable
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     JobContext,
@@ -12,8 +12,8 @@ from livekit.agents import (
     cli,
     llm,
 )
-from livekit.agents.llm.chat_context import ChatContext, ChatMessage
-from livekit.plugins import deepgram, groq, openai, silero
+from wizzpert.agents.llm.chat_context import ChatContext, ChatMessage
+from wizzpert.plugins import deepgram, groq, openai, silero
 
 logger = logging.getLogger("pre-reseponse-agent")
 

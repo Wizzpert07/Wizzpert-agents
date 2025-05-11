@@ -7,8 +7,8 @@ import types
 
 import pytest
 
-from livekit.agents import DEFAULT_API_CONNECT_OPTIONS, utils
-from livekit.agents.cli import log
+from wizzpert.agents import DEFAULT_API_CONNECT_OPTIONS, utils
+from wizzpert.agents.cli import log
 
 from .toxic_proxy import Toxiproxy
 
@@ -37,7 +37,7 @@ def toxiproxy():
 
 @pytest.fixture()
 def logger():
-    logger = logging.getLogger("livekit.tests")
+    logger = logging.getLogger("wizzpert.tests")
     logger.setLevel(logging.DEBUG)
     return logger
 

@@ -6,7 +6,7 @@ from typing import Literal
 from dotenv import load_dotenv
 from pydantic import BaseModel
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     ChatContext,
@@ -17,7 +17,7 @@ from livekit.agents import (
     cli,
     function_tool,
 )
-from livekit.plugins import openai, silero
+from wizzpert.plugins import openai, silero
 
 logger = logging.getLogger("grok-agent")
 logger.setLevel(logging.INFO)

@@ -1,5 +1,5 @@
 ---
-"livekit-plugins-google": patch
+"wizzpert-plugins-google": patch
 ---
 
 Use PCM instead of OGG_OPUS for Google TTS (#2139)

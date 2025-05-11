@@ -107,56 +107,56 @@ def bump_prerelease(cur: str, bump_type: str) -> str:
 def update_plugins_pyproject_agents_version(new_agents_version: str) -> None:
     """
     For each plugin directory that has a pyproject.toml at the top level,
-    update any references to livekit-agents>=X.Y.Z (or ==, ~=, etc.)
+    update any references to wizzpert-agents>=X.Y.Z (or ==, ~=, etc.)
     to the new_agents_version.
     """
-    plugins_root = pathlib.Path("livekit-plugins")
-    for pdir in plugins_root.glob("livekit-plugins-*"):
+    plugins_root = pathlib.Path("wizzpert-plugins")
+    for pdir in plugins_root.glob("wizzpert-plugins-*"):
         pyproject = pdir / "pyproject.toml"
         if pyproject.exists():
             old_text = pyproject.read_text()
             # Pattern:
-            # Group 1 => "livekit-agents" possibly with extras e.g. [images],
+            # Group 1 => "wizzpert-agents" possibly with extras e.g. [images],
             # then one or more version operators like >=, ==, ~=, etc.
             # Group 2 => the old version (digits, dots, dev, rc, etc.)
-            pattern = r'("livekit-agents(?:\[.*?\])?[=><!~]+)([\w\.\-]+)(?=")'
+            pattern = r'("wizzpert-agents(?:\[.*?\])?[=><!~]+)([\w\.\-]+)(?=")'
 
             # Use a replacement function so we don't run into '\1' + '1...' -> '\11...' confusion
             def replacer(m: re.Match) -> str:
-                group1 = m.group(1)  # e.g. 'livekit-agents[images]>='
+                group1 = m.group(1)  # e.g. 'wizzpert-agents[images]>='
                 # We discard the old version (group 2) and insert the new.
                 return f"{group1}{new_agents_version}"
 
             new_text = re.sub(pattern, replacer, old_text)
             if new_text != old_text:
                 pyproject.write_text(new_text)
-                print(f"Updated pyproject.toml in {pdir.name} to use livekit-agents {new_agents_version}")
+                print(f"Updated pyproject.toml in {pdir.name} to use wizzpert-agents {new_agents_version}")
 
 def update_versions(changesets: Dict[str, Tuple[str, List[str]]]) -> None:
     """
     Given changesets {package: (bump_type, [changelogs])}, 
     bump versions accordingly and also update references in pyproject.toml if 
-    'livekit-agents' was updated.
+    'wizzpert-agents' was updated.
     """
-    agents_ver = pathlib.Path("livekit-agents/livekit/agents/version.py")
-    plugins_root = pathlib.Path("livekit-plugins")
+    agents_ver = pathlib.Path("wizzpert-agents/wizzpert/agents/version.py")
+    plugins_root = pathlib.Path("wizzpert-plugins")
 
     new_agents_version = None
 
-    # handle livekit-agents
-    if agents_ver.exists() and "livekit-agents" in changesets:
-        bump_type, _ = changesets["livekit-agents"]
+    # handle wizzpert-agents
+    if agents_ver.exists() and "wizzpert-agents" in changesets:
+        bump_type, _ = changesets["wizzpert-agents"]
         cur = read_version(agents_ver)
         new = bump_version(cur, bump_type)
-        print(f"livekit-agents: {_esc(31)}{cur}{_esc(0)} -> {_esc(32)}{new}{_esc(0)}")
+        print(f"wizzpert-agents: {_esc(31)}{cur}{_esc(0)} -> {_esc(32)}{new}{_esc(0)}")
         write_new_version(agents_ver, new)
         new_agents_version = new
     else:
-        print("Warning: No version.py or no bump info for livekit-agents.")
+        print("Warning: No version.py or no bump info for wizzpert-agents.")
 
     # handle each plugin's version.py
-    for pdir in plugins_root.glob("livekit-plugins-*"):
-        vf = pdir / "livekit" / "plugins" / pdir.name.split("livekit-plugins-")[1].replace("-", "_") / "version.py"
+    for pdir in plugins_root.glob("wizzpert-plugins-*"):
+        vf = pdir / "wizzpert" / "plugins" / pdir.name.split("wizzpert-plugins-")[1].replace("-", "_") / "version.py"
         if vf.exists():
             if pdir.name in changesets:
                 bump_type, _ = changesets[pdir.name]
@@ -169,33 +169,33 @@ def update_versions(changesets: Dict[str, Tuple[str, List[str]]]) -> None:
         else:
             print(f"Warning: version.py not found for {pdir.name} at {vf}")
 
-    # If we updated livekit-agents version, also update references in each plugin's pyproject.toml
+    # If we updated wizzpert-agents version, also update references in each plugin's pyproject.toml
     if new_agents_version:
         update_plugins_pyproject_agents_version(new_agents_version)
 
 def update_prerelease(prerelease_type: str) -> None:
     """
     Perform prerelease (rc or dev) bumps everywhere and also update references in 
-    plugin pyproject.toml to the new livekit-agents version, if changed.
+    plugin pyproject.toml to the new wizzpert-agents version, if changed.
     """
-    agents_ver = pathlib.Path("livekit-agents/livekit/agents/version.py")
-    plugins_root = pathlib.Path("livekit-plugins")
+    agents_ver = pathlib.Path("wizzpert-agents/wizzpert/agents/version.py")
+    plugins_root = pathlib.Path("wizzpert-plugins")
 
     new_agents_version = None
 
-    # handle livekit-agents
+    # handle wizzpert-agents
     if agents_ver.exists():
         cur = read_version(agents_ver)
         new = bump_prerelease(cur, prerelease_type)
-        print(f"livekit-agents: {_esc(31)}{cur}{_esc(0)} -> {_esc(32)}{new}{_esc(0)}")
+        print(f"wizzpert-agents: {_esc(31)}{cur}{_esc(0)} -> {_esc(32)}{new}{_esc(0)}")
         write_new_version(agents_ver, new)
         new_agents_version = new
     else:
-        print("Warning: No version.py for livekit-agents.")
+        print("Warning: No version.py for wizzpert-agents.")
 
     # handle each plugin
-    for pdir in plugins_root.glob("livekit-plugins-*"):
-        vf = pdir / "livekit" / "plugins" / pdir.name.split("livekit-plugins-")[1].replace("-", "_") / "version.py"
+    for pdir in plugins_root.glob("wizzpert-plugins-*"):
+        vf = pdir / "wizzpert" / "plugins" / pdir.name.split("wizzpert-plugins-")[1].replace("-", "_") / "version.py"
         if vf.exists():
             cur = read_version(vf)
             new_v = bump_prerelease(cur, prerelease_type)
@@ -204,7 +204,7 @@ def update_prerelease(prerelease_type: str) -> None:
         else:
             print(f"Warning: version.py not found for {pdir.name} at {vf}")
 
-    # If we updated livekit-agents version, update references in each plugin's pyproject.toml
+    # If we updated wizzpert-agents version, update references in each plugin's pyproject.toml
     if new_agents_version:
         update_plugins_pyproject_agents_version(new_agents_version)
 
@@ -224,7 +224,7 @@ def bump(pre: str) -> None:
 
     If --pre=rc or --pre=dev, it updates the current versions to a new RC or DEV version.
     In both cases, we also update pyproject.toml references that point to 
-    'livekit-agents>=XYZ' so they match the newly bumped version.
+    'wizzpert-agents>=XYZ' so they match the newly bumped version.
     """
     if pre == "none":
         # Normal release bump: read bumps from changesets

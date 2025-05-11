@@ -3,9 +3,9 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli
-from livekit.plugins import openai
+from wizzpert import rtc
+from wizzpert.agents import AutoSubscribe, JobContext, WorkerOptions, cli
+from wizzpert.plugins import openai
 
 load_dotenv()
 

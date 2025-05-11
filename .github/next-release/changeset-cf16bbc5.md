@@ -1,5 +1,5 @@
 ---
-"livekit-plugins-google": patch
+"wizzpert-plugins-google": patch
 ---
 
 fix gemini live interruption

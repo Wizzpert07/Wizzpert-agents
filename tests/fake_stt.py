@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import asyncio
 
-from livekit.agents import NOT_GIVEN, NotGivenOr, utils
-from livekit.agents.stt import (
+from wizzpert.agents import NOT_GIVEN, NotGivenOr, utils
+from wizzpert.agents.stt import (
     STT,
     RecognizeStream,
     SpeechData,
@@ -11,8 +11,8 @@ from livekit.agents.stt import (
     SpeechEventType,
     STTCapabilities,
 )
-from livekit.agents.types import DEFAULT_API_CONNECT_OPTIONS, APIConnectOptions
-from livekit.agents.utils.audio import AudioBuffer
+from wizzpert.agents.types import DEFAULT_API_CONNECT_OPTIONS, APIConnectOptions
+from wizzpert.agents.utils.audio import AudioBuffer
 
 
 class RecognizeSentinel:

@@ -9,8 +9,8 @@ on:
     branches:
       - main
     paths:
-      - "livekit-agents/**"
-      - "livekit-plugins/**"
+      - "wizzpert-agents/**"
+      - "wizzpert-plugins/**"
       - ".github/next-release/**"
 
 jobs:

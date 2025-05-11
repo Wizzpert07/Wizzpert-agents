@@ -1,7 +1,7 @@
 ---
-"livekit-plugins-anthropic": patch
-"livekit-plugins-aws": patch
-"livekit-plugins-google": patch
+"wizzpert-plugins-anthropic": patch
+"wizzpert-plugins-aws": patch
+"wizzpert-plugins-google": patch
 ---
 
 fix llm.chat for plugins when using with empty tools

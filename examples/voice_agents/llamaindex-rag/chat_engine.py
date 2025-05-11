@@ -11,9 +11,9 @@ from llama_index.core import (
 from llama_index.core.chat_engine.types import ChatMode
 from llama_index.core.llms import ChatMessage, MessageRole
 
-from livekit.agents import Agent, AgentSession, AutoSubscribe, JobContext, WorkerOptions, cli, llm
-from livekit.agents.voice.agent import ModelSettings
-from livekit.plugins import deepgram, openai, silero
+from wizzpert.agents import Agent, AgentSession, AutoSubscribe, JobContext, WorkerOptions, cli, llm
+from wizzpert.agents.voice.agent import ModelSettings
+from wizzpert.plugins import deepgram, openai, silero
 
 load_dotenv()
 
@@ -41,7 +41,7 @@ class ChatEngineAgent(Agent):
     def __init__(self, index: VectorStoreIndex):
         super().__init__(
             instructions=(
-                "You are a voice assistant created by LiveKit. Your interface "
+                "You are a voice assistant created by wizzpert. Your interface "
                 "with users will be voice. You should use short and concise "
                 "responses, and avoiding usage of unpronouncable punctuation."
             ),

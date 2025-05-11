@@ -4,9 +4,9 @@ from typing import Optional
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import JobContext, WorkerOptions, cli
-from livekit.plugins import elevenlabs
+from wizzpert import rtc
+from wizzpert.agents import JobContext, WorkerOptions, cli
+from wizzpert.plugins import elevenlabs
 
 logger = logging.getLogger("elevenlabs-tts-demo")
 logger.setLevel(logging.INFO)

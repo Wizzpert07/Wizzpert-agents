@@ -1,5 +1,5 @@
 ---
-"livekit-plugins-google": patch
+"wizzpert-plugins-google": patch
 ---
 
 add image_encode_options for google realtime model (#2249)

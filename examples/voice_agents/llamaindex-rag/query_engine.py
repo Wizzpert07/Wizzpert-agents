@@ -8,8 +8,8 @@ from llama_index.core import (
     load_index_from_storage,
 )
 
-from livekit.agents import Agent, AgentSession, AutoSubscribe, JobContext, WorkerOptions, cli, llm
-from livekit.plugins import deepgram, openai, silero
+from wizzpert.agents import Agent, AgentSession, AutoSubscribe, JobContext, WorkerOptions, cli, llm
+from wizzpert.plugins import deepgram, openai, silero
 
 load_dotenv()
 
@@ -42,7 +42,7 @@ async def entrypoint(ctx: JobContext):
 
     agent = Agent(
         instructions=(
-            "You are a voice assistant created by LiveKit. Your interface "
+            "You are a voice assistant created by wizzpert. Your interface "
             "with users will be voice. You should use short and concise "
             "responses, and avoiding usage of unpronouncable punctuation."
         ),

@@ -18,5 +18,5 @@ and error logs, if applicable.
 Feel free to join us in the #agents channel on our Slack, and ask your question
 there to get quicker help from us and the community:
 
-https://livekit.io/join-slack
+https://wizzpert.io/join-slack
 -->

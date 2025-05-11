@@ -2,8 +2,8 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import JobContext, WorkerOptions, cli
+from wizzpert import rtc
+from wizzpert.agents import JobContext, WorkerOptions, cli
 
 logger = logging.getLogger("e2ee-example")
 logger.setLevel(logging.INFO)

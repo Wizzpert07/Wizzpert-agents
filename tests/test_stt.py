@@ -8,9 +8,9 @@ from typing import Callable
 
 import pytest
 
-from livekit import agents
-from livekit.agents import stt
-from livekit.plugins import (
+from wizzpert import agents
+from wizzpert.agents import stt
+from wizzpert.plugins import (
     assemblyai,
     aws,
     azure,

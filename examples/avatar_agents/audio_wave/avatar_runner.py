@@ -7,8 +7,8 @@ from typing import Optional, Union
 
 import numpy as np
 
-from livekit import rtc
-from livekit.agents.voice.avatar import (
+from wizzpert import rtc
+from wizzpert.agents.voice.avatar import (
     AudioSegmentEnd,
     AvatarOptions,
     AvatarRunner,
@@ -236,7 +236,7 @@ async def run_service(url: str, token: str):
     """Run the avatar worker service"""
     room = rtc.Room()
     try:
-        # Connect to LiveKit room
+        # Connect to wizzpert room
         logging.info("Connecting to %s", url)
         await room.connect(url, token)
         logging.info("Connected to room %s", room.name)
@@ -257,7 +257,7 @@ if __name__ == "__main__":
     def parse_args():
         """Parse command line arguments"""
         parser = ArgumentParser()
-        parser.add_argument("--url", required=True, help="LiveKit server URL")
+        parser.add_argument("--url", required=True, help="wizzpert server URL")
         parser.add_argument("--token", required=True, help="Token for joining room")
         parser.add_argument("--room", help="Room name")
         parser.add_argument(

@@ -2,7 +2,7 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     JobContext,
@@ -11,7 +11,7 @@ from livekit.agents import (
     WorkerOptions,
     cli,
 )
-from livekit.plugins import google, silero
+from wizzpert.plugins import google, silero
 
 logger = logging.getLogger("gemini-video-agent")
 

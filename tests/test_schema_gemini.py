@@ -5,7 +5,7 @@ import pytest
 from google.genai import types
 from pydantic import BaseModel, Field
 
-from livekit.plugins.google import utils
+from wizzpert.plugins.google import utils
 
 #  Gemini Schema Tests
 

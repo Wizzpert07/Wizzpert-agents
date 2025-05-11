@@ -3,7 +3,7 @@ import os
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     JobContext,
@@ -12,7 +12,7 @@ from livekit.agents import (
     WorkerType,
     cli,
 )
-from livekit.plugins import bey, openai
+from wizzpert.plugins import bey, openai
 
 logger = logging.getLogger("bey-avatar-example")
 logger.setLevel(logging.INFO)

@@ -21,14 +21,14 @@ services:
     command: tail -f /dev/null
     volumes:
       - ../tests:/app/tests
-      - ../livekit-agents:/app/livekit-agents
-      - ../livekit-plugins:/app/livekit-plugins
+      - ../wizzpert-agents:/app/wizzpert-agents
+      - ../wizzpert-plugins:/app/wizzpert-plugins
       - ../pyproject.toml:/app/pyproject.toml
       - ../uv.lock:/app/uv.lock
     environment:
-      - LIVEKIT_URL
-      - LIVEKIT_API_KEY
-      - LIVEKIT_API_SECRET
+      - wizzpert_URL
+      - wizzpert_API_KEY
+      - wizzpert_API_SECRET
       - DEEPGRAM_API_KEY
       - OPENAI_API_KEY
       - ELEVEN_API_KEY

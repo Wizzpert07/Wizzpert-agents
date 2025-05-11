@@ -2,10 +2,10 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import Agent, AgentSession, JobContext, JobRequest, RoomIO, WorkerOptions, cli
-from livekit.agents.llm import ChatContext, ChatMessage, StopResponse
-from livekit.plugins import cartesia, deepgram, openai
+from wizzpert import rtc
+from wizzpert.agents import Agent, AgentSession, JobContext, JobRequest, RoomIO, WorkerOptions, cli
+from wizzpert.agents.llm import ChatContext, ChatMessage, StopResponse
+from wizzpert.plugins import cartesia, deepgram, openai
 
 logger = logging.getLogger("push-to-talk")
 logger.setLevel(logging.INFO)

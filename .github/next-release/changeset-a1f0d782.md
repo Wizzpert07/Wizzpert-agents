@@ -1,5 +1,5 @@
 ---
-"livekit-plugins-openai": patch
+"wizzpert-plugins-openai": patch
 ---
 
 fix realtiem defualts with azure openai

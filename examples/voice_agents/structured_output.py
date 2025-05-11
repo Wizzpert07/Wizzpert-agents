@@ -7,7 +7,7 @@ from pydantic import Field
 from pydantic_core import from_json
 from typing_extensions import TypedDict
 
-from livekit.agents import (
+from wizzpert.agents import (
     NOT_GIVEN,
     Agent,
     AgentSession,
@@ -18,8 +18,8 @@ from livekit.agents import (
     WorkerOptions,
     cli,
 )
-from livekit.plugins import openai, silero
-from livekit.plugins.turn_detector.english import EnglishModel
+from wizzpert.plugins import openai, silero
+from wizzpert.plugins.turn_detector.english import EnglishModel
 
 logger = logging.getLogger("structured-output")
 load_dotenv()

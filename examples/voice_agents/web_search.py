@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from dotenv import load_dotenv
 from duckduckgo_search import DDGS
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     JobContext,
@@ -15,7 +15,7 @@ from livekit.agents import (
     cli,
     function_tool,
 )
-from livekit.plugins import openai
+from wizzpert.plugins import openai
 
 load_dotenv()
 

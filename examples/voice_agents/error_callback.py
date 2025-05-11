@@ -5,12 +5,12 @@ import pathlib
 
 from dotenv import load_dotenv
 
-from livekit.agents import JobContext, WorkerOptions, cli
-from livekit.agents.utils.audio import audio_frames_from_file
-from livekit.agents.voice import Agent, AgentSession
-from livekit.agents.voice.events import CloseEvent, ErrorEvent
-from livekit.plugins import cartesia, deepgram, openai, silero
-from livekit.rtc import ParticipantKind
+from wizzpert.agents import JobContext, WorkerOptions, cli
+from wizzpert.agents.utils.audio import audio_frames_from_file
+from wizzpert.agents.voice import Agent, AgentSession
+from wizzpert.agents.voice.events import CloseEvent, ErrorEvent
+from wizzpert.plugins import cartesia, deepgram, openai, silero
+from wizzpert.rtc import ParticipantKind
 
 logger = logging.getLogger("my-worker")
 logger.setLevel(logging.INFO)
@@ -82,7 +82,7 @@ async def entrypoint(ctx: JobContext):
                 logger.info("SIP participant transferred")
             ctx.delete_room()
 
-        # See https://docs.livekit.io/sip/ on how to set up SIP participants
+        # See https://docs.wizzpert.io/sip/ on how to set up SIP participants
         if participant.kind == ParticipantKind.PARTICIPANT_KIND_SIP:
             ctx.transfer_sip_participant(participant, "tel:+18003310500").add_done_callback(
                 on_sip_transfer_done

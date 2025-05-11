@@ -25,11 +25,11 @@ def parse_changes(files):
     changes = set()
     changeset_exists = False
     for f in files:
-        if f.startswith("livekit-agents"):
-            changes.add("livekit-agents")
-        elif f.startswith("livekit-plugins/"):
+        if f.startswith("wizzpert-agents"):
+            changes.add("wizzpert-agents")
+        elif f.startswith("wizzpert-plugins/"):
             parts = f.split("/")
-            if len(parts) > 1 and os.path.isdir(os.path.join("livekit-plugins", parts[1])):
+            if len(parts) > 1 and os.path.isdir(os.path.join("wizzpert-plugins", parts[1])):
                 changes.add(parts[1])
         elif f.startswith(".github/next-release/"):
             changeset_exists = True
@@ -78,9 +78,9 @@ def validate_changeset_content(content):
         if pkg in packages:
             return False, f"Duplicate package entry found: '{pkg}'."
         packages.add(pkg)
-    # Check that each plugin (other than livekit-agents) exists.
+    # Check that each plugin (other than wizzpert-agents) exists.
     for pkg in packages:
-        if pkg != "livekit-agents" and not os.path.isdir(os.path.join("livekit-plugins", pkg)):
+        if pkg != "wizzpert-agents" and not os.path.isdir(os.path.join("wizzpert-plugins", pkg)):
             return False, f"Plugin '{pkg}' directory does not exist."
     description_lines = lines[second_delim_index + 1:]
     if not any(l.strip() for l in description_lines):

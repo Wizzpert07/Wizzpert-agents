@@ -3,8 +3,8 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli
+from wizzpert import rtc
+from wizzpert.agents import AutoSubscribe, JobContext, WorkerOptions, cli
 
 load_dotenv()
 

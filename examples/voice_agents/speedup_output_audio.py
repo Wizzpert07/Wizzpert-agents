@@ -4,8 +4,8 @@ from collections.abc import AsyncIterable
 import numpy as np
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import (
+from wizzpert import rtc
+from wizzpert.agents import (
     Agent,
     AgentSession,
     JobContext,
@@ -15,7 +15,7 @@ from livekit.agents import (
     cli,
     utils,
 )
-from livekit.plugins import deepgram, openai, silero
+from wizzpert.plugins import deepgram, openai, silero
 
 try:
     import librosa

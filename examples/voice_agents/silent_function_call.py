@@ -2,9 +2,9 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit.agents import Agent, AgentSession, JobContext, WorkerOptions, cli
-from livekit.agents.llm import function_tool
-from livekit.plugins import cartesia, deepgram, openai, silero
+from wizzpert.agents import Agent, AgentSession, JobContext, WorkerOptions, cli
+from wizzpert.agents.llm import function_tool
+from wizzpert.plugins import cartesia, deepgram, openai, silero
 
 logger = logging.getLogger("silent-function-call")
 logger.setLevel(logging.INFO)

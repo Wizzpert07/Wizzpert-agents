@@ -5,8 +5,8 @@ import pathlib
 
 import jiwer as tr
 
-from livekit import rtc
-from livekit.agents import utils
+from wizzpert import rtc
+from wizzpert.agents import utils
 
 TEST_AUDIO_FILEPATH = os.path.join(os.path.dirname(__file__), "long.mp3")
 TEST_AUDIO_TRANSCRIPT = pathlib.Path(os.path.dirname(__file__), "long_transcript.txt").read_text()

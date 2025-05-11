@@ -1,5 +1,5 @@
 ---
-"livekit-agents": patch
+"wizzpert-agents": patch
 ---
 
 add segment id to transcription text stream (#1951)

@@ -1,5 +1,5 @@
 ---
-"livekit-plugins-rime": patch
+"wizzpert-plugins-rime": patch
 ---
 
 Added ability to set custom Rime URL for self-hosted deployments (#2158)

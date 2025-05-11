@@ -6,13 +6,13 @@ import yaml
 from dotenv import load_dotenv
 from pydantic import Field
 
-from livekit.agents import JobContext, WorkerOptions, cli
-from livekit.agents.llm import function_tool
-from livekit.agents.voice import Agent, AgentSession, RunContext
-from livekit.agents.voice.room_io import RoomInputOptions
-from livekit.plugins import cartesia, deepgram, openai, silero
+from wizzpert.agents import JobContext, WorkerOptions, cli
+from wizzpert.agents.llm import function_tool
+from wizzpert.agents.voice import Agent, AgentSession, RunContext
+from wizzpert.agents.voice.room_io import RoomInputOptions
+from wizzpert.plugins import cartesia, deepgram, openai, silero
 
-# from livekit.plugins import noise_cancellation
+# from wizzpert.plugins import noise_cancellation
 
 logger = logging.getLogger("restaurant-example")
 logger.setLevel(logging.INFO)

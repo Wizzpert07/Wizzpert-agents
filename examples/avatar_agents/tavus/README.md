@@ -1,4 +1,4 @@
-# LiveKit Tavus Avatar Agent
+# wizzpert Tavus Avatar Agent
 
 This example demonstrates how to create a animated avatar using [Tavus](https://platform.tavus.io/).
 
@@ -14,10 +14,10 @@ export TAVUS_REPLICA_ID="..."
 # OpenAI config (or other models, tts, stt)
 export OPENAI_API_KEY="..."
 
-# LiveKit config
-export LIVEKIT_API_KEY="..."
-export LIVEKIT_API_SECRET="..."
-export LIVEKIT_URL="..."
+# wizzpert config
+export wizzpert_API_KEY="..."
+export wizzpert_API_SECRET="..."
+export wizzpert_URL="..."
 ```
 
 * Start the agent worker:

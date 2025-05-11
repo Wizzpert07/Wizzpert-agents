@@ -2,9 +2,9 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import Agent, AgentSession, JobContext, RoomIO, WorkerOptions, cli
-from livekit.plugins import openai
+from wizzpert import rtc
+from wizzpert.agents import Agent, AgentSession, JobContext, RoomIO, WorkerOptions, cli
+from wizzpert.plugins import openai
 
 logger = logging.getLogger("toggle-io")
 logger.setLevel(logging.INFO)
@@ -13,7 +13,7 @@ load_dotenv()
 
 ## This example demonstrates a more complex application that allows the user to
 ## toggle audio and text input/output on the fly.
-## The example makes use of LiveKit's RPC system to exchange messages between the
+## The example makes use of wizzpert's RPC system to exchange messages between the
 ## client and the server.
 
 

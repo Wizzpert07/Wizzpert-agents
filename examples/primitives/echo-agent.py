@@ -3,8 +3,8 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit import rtc
-from livekit.agents import (
+from wizzpert import rtc
+from wizzpert.agents import (
     ATTRIBUTE_AGENT_STATE,
     AgentState,
     AutoSubscribe,
@@ -12,8 +12,8 @@ from livekit.agents import (
     WorkerOptions,
     cli,
 )
-from livekit.agents.vad import VADEventType
-from livekit.plugins import silero
+from wizzpert.agents.vad import VADEventType
+from wizzpert.plugins import silero
 
 load_dotenv()
 logger = logging.getLogger("echo-agent")

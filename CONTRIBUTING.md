@@ -1,11 +1,11 @@
-# Contributing to livekit/agents
+# Contributing to wizzpert/agents
 
-The LiveKit Agents framework is an open-source project, and we welcome any contribution from anyone
+The wizzpert Agents framework is an open-source project, and we welcome any contribution from anyone
 willing to work in good faith with the community. No contribution is too small!
 
 ## Code of Conduct
 
-The LiveKit Agents project has a [Code of Conduct](/CODE_OF_CONDUCT.md) to which all contributors
+The wizzpert Agents project has a [Code of Conduct](/CODE_OF_CONDUCT.md) to which all contributors
 must adhere.
 
 ## Contribute code
@@ -44,4 +44,4 @@ be approved:
 
 If you can't contribute code, you can still help us greatly by helping out community members who
 may have questions about the framework and how to use it. Join the `#agents` channel on
-[our Slack](https://livekit.io/join-slack).
+[our Slack](https://wizzpert.io/join-slack).

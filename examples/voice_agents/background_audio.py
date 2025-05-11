@@ -3,7 +3,7 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     AudioConfig,
@@ -14,7 +14,7 @@ from livekit.agents import (
     cli,
     function_tool,
 )
-from livekit.plugins import openai
+from wizzpert.plugins import openai
 
 logger = logging.getLogger("background-audio")
 

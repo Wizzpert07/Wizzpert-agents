@@ -2,7 +2,7 @@ import logging
 
 from dotenv import load_dotenv
 
-from livekit.agents import (
+from wizzpert.agents import (
     Agent,
     AgentSession,
     JobContext,
@@ -14,14 +14,14 @@ from livekit.agents import (
     cli,
     metrics,
 )
-from livekit.agents.llm import function_tool
-from livekit.agents.voice import MetricsCollectedEvent
-from livekit.plugins import deepgram, openai, silero
-from livekit.plugins.turn_detector.multilingual import MultilingualModel
+from wizzpert.agents.llm import function_tool
+from wizzpert.agents.voice import MetricsCollectedEvent
+from wizzpert.plugins import deepgram, openai, silero
+from wizzpert.plugins.turn_detector.multilingual import MultilingualModel
 
 # uncomment to enable Krisp background voice/noise cancellation
 # currently supported on Linux and MacOS
-# from livekit.plugins import noise_cancellation
+# from wizzpert.plugins import noise_cancellation
 
 logger = logging.getLogger("basic-agent")
 
@@ -80,7 +80,7 @@ async def entrypoint(ctx: JobContext):
         llm=openai.LLM(model="gpt-4o-mini"),
         stt=deepgram.STT(model="nova-3", language="multi"),
         tts=openai.TTS(voice="ash"),
-        # use LiveKit's turn detection model
+        # use wizzpert's turn detection model
         turn_detection=MultilingualModel(),
     )
 

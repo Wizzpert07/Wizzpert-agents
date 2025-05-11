@@ -5,8 +5,8 @@ from itertools import chain
 from dotenv import load_dotenv
 from google.protobuf.json_format import MessageToDict
 
-from livekit.agents import Agent, AgentSession, JobContext, WorkerOptions, cli
-from livekit.plugins import openai
+from wizzpert.agents import Agent, AgentSession, JobContext, WorkerOptions, cli
+from wizzpert.plugins import openai
 
 logger = logging.getLogger("minimal-worker")
 logger.setLevel(logging.INFO)

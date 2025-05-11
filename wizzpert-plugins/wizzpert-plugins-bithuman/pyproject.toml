@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wizzpert-plugins-bithuman"
+dynamic = ["version"]
+description = "Agent Framework plugin for services from BitHuman Avatar Rendering"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.9.0"
+authors = [{ name = "wizzpert", email = "support@wizzpert.io" }]
+keywords = ["webrtc", "realtime", "audio", "video", "wizzpert"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = ["wizzpert-agents>=1.0.20", "bithuman>=0.5.5"]
+
+[project.urls]
+Documentation = "https://docs.wizzpert.io"
+Website = "https://wizzpert.io/"
+Source = "https://github.com/wizzpert/agents"
+
+[tool.hatch.version]
+path = "wizzpert/plugins/bithuman/version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["wizzpert"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/wizzpert"]

@@ -5,11 +5,11 @@ import contextlib
 
 import pytest
 
-from livekit import rtc
-from livekit.agents import APIConnectionError, utils
-from livekit.agents.tts import TTS, AvailabilityChangedEvent, FallbackAdapter
-from livekit.agents.tts.tts import SynthesizeStream
-from livekit.agents.utils.aio.channel import ChanEmpty
+from wizzpert import rtc
+from wizzpert.agents import APIConnectionError, utils
+from wizzpert.agents.tts import TTS, AvailabilityChangedEvent, FallbackAdapter
+from wizzpert.agents.tts.tts import SynthesizeStream
+from wizzpert.agents.utils.aio.channel import ChanEmpty
 
 from .fake_tts import FakeTTS
 
