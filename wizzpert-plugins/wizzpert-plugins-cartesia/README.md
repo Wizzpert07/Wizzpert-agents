@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Cartesia plugin for wizzpert Agents
 
 Support for voice synthesis with [Cartesia](https://cartesia.ai/).

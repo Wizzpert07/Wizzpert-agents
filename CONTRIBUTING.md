@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Contributing to wizzpert/agents
 
 The wizzpert Agents framework is an open-source project, and we welcome any contribution from anyone

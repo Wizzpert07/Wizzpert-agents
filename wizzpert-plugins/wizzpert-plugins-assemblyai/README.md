@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # AssemblyAI plugin for wizzpert Agents
 
 Support for Streaming Speech-to-Text from AssemblyAI.

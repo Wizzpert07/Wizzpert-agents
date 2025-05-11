@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # BitHuman plugin for wizzpert Agents
 
 Support for avatars with [bitHuman](https://www.bithuman.ai/)'s local runtime SDK.

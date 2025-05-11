@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # ElevenLabs plugin for wizzpert Agents
 
 Support for voice synthesis with [ElevenLabs](https://elevenlabs.io/).

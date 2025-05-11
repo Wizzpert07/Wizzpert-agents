@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 ---
 name: Bug report
 about: Let us know of an issue so we can fix it

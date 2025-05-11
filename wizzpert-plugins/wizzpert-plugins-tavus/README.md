@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Tavus virtual avatar plugin for wizzpert Agents
 
 Support for the [Tavus](https://tavus.io/) virtual avatar.

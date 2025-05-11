@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Azure plugin for wizzpert Agents
 
 Support for Azure AI including Azure Speech. For Azure OpenAI, see the [OpenAI plugin](https://github.com/wizzpert/agents/tree/main/wizzpert-plugins/wizzpert-plugins-openai).

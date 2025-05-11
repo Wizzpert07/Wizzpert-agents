@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # wizzpert Tavus Avatar Agent
 
 This example demonstrates how to create a animated avatar using [Tavus](https://platform.tavus.io/).

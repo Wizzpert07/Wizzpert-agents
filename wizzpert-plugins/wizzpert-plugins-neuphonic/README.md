@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Neuphonic plugin for wizzpert Agents
 
 Support for voice synthesis with [Neuphonic](https://neuphonic.com).

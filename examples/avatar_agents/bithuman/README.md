@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # BitHuman Avatar Example
 
 This example demonstrates how to integrate the BitHuman SDK with wizzpert Agents to create an interactive visual agent on local CPU device.

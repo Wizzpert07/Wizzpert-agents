@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Rime plugin for wizzpert Agents
 
 Support for voice synthesis with the [Rime](https://rime.ai/) API.

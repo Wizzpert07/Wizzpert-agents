@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Turn detector plugin for wizzpert Agents
 
 This plugin introduces end-of-turn detection for wizzpert Agents using a custom open-weight model to determine when a user has finished speaking.

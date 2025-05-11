@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Anthropic plugin for wizzpert Agents
 
 Support for the Claude family of LLMs from Anthropic.

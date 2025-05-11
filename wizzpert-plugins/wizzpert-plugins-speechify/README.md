@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Speechify TTS plugin for wizzpert Agents
 
 Support for voice synthesis with the [Speechify](https://www.speechify.ai/) API.

@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 ---
 "wizzpert-plugins-elevenlabs": major
 ---

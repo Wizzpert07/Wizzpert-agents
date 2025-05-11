@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # fal plugin for wizzpert Agents
 
 Support for speech-to-text with [fal.ai](https://fal.ai/).

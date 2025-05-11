@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Resemble plugin for wizzpert Agents
 
 Support for voice synthesis with the [Resemble AI](https://www.resemble.ai/) API, using both their REST API and WebSocket streaming interface.

@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 ---
 name: Question
 about: Ask for help with an issue you're facing

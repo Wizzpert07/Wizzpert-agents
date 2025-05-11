@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Speechmatics STT plugin for wizzpert Agents
 
 Support for Speechmatics STT.

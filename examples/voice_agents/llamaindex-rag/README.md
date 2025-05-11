@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # RAG Example using LlamaIndex
 
 This repository showcases three ways to build a voice assistant with Retrieval-Augmented Generation (RAG) using LlamaIndex:

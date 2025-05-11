@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Speech-to-text
 
 This example shows realtime transcription from voice to text.

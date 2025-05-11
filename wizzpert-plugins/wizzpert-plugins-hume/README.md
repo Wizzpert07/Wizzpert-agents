@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Hume AI TTS plugin for wizzpert Agents
 
 Support for text-to-speech with [Hume](https://www.hume.ai/).

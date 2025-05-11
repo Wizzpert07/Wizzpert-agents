@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # wizzpert Beyond Presence Avatar Example
 
 This example demonstrates how to create an animated avatar using Beyond Presence that responds to audio input using wizzpert's agent system.

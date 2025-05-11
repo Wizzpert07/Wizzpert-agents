@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Avatar Examples
 
 Avatars provide a visual representation for agents.

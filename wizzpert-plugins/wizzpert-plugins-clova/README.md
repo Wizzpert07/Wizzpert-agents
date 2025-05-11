@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Clova plugin for wizzpert Agents
 
 Support for speech-to-text with [Clova](https://api.ncloud-docs.com/docs/).

@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Minimal example plugin for wizzpert Agents
 
 This is a minimal example of a wizzpert plugin for Agents.

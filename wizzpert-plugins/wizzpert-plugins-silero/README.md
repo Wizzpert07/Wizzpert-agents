@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Silero VAD plugin for wizzpert Agents
 
 Support for VAD-based turn detection.

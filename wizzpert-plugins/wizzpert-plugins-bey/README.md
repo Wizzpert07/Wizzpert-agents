@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Beyond Presence plugin for wizzpert Agents
 
 Support for [Beyond Presence](https://docs.bey.dev) virtual avatars.

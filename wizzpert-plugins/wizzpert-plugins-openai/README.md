@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # OpenAI plugin for wizzpert Agents
 
 Support for OpenAI Realtime API, LLM, TTS, and STT APIs.

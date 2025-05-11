@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Google AI plugin for wizzpert Agents
 
 Support for Gemini, Gemini Live, Cloud Speech-to-Text, and Cloud Text-to-Speech.

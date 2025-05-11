@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Gladia plugin for wizzpert Agents
 
 Support for speech-to-text with [Gladia](https://gladia.io/).

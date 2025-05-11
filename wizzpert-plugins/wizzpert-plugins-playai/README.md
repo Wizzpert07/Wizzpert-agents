@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # PlayAI/PlayHT plugin for wizzpert Agents
 
 Support for voice synthesis with [PlayAI](https://play.ai/).

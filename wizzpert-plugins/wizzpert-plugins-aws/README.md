@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # AWS plugin for wizzpert Agents
 
 Support for AWS AI including Bedrock, Polly, and Transcribe.

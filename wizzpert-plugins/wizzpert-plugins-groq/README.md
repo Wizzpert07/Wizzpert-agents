@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Groq plugin for wizzpert Agents
 
 Support for STT, TTS, and LLM with [Groq](https://www.groq.com/) fast inference.

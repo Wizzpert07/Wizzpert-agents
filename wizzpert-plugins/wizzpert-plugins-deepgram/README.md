@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # Deepgram plugin for wizzpert Agents
 
 Support for speech-to-text with [Deepgram](https://deepgram.com/).

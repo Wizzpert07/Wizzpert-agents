@@ -1,5 +1,7 @@
 # wizzpert Agents for Python
 
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 Realtime framework for production-grade multimodal and voice AI agents.
 
 See [https://docs.wizzpert.io/agents/](https://docs.wizzpert.io/agents/) for quickstarts, documentation, and examples.

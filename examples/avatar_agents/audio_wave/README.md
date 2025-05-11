@@ -1,3 +1,5 @@
+![Wizzpert Logo](wizzpert-plugins/assets/logo.png)
+
 # wizzpert Mock Avatar Example
 
 This example demonstrates how to create an animated avatar that responds to audio input using wizzpert's agent system. The avatar worker generates synchronized video based on received audio input.
